@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Cloud Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900 text-white p-5 md:p-10">
+    <div class="max-w-2xl mx-auto">
+      <h1
+        class="text-3xl font-bold border-b border-blue-500 pb-4 mb-6 text-center"
+      >
+        Cloud Real-time Sync With Firebase
+      </h1>
+
+      <div
+        class="cloud-card p-6 rounded-lg mb-6 shadow-xl border border-slate-700"
+      >
+        <label class="block mb-2 text-sm text-slate-400"
+          >إضافة سجل جديد للسحابة:</label
+        >
+        <div class="flex gap-2">
+          <input
+            id="dataInput"
+            type="text"
+            placeholder="اكتب شيئاً ليحفظ في Firestore..."
+            class="input-field flex-1 p-2 rounded bg-slate-700 border border-slate-600 text-white focus:outline-none focus:border-blue-500"
+          />
+          <button
+            id="saveBtn"
+            class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded font-bold transition"
+          >
+            حفظ
+          </button>
+        </div>
+      </div>
+
+      <div class="cloud-card p-6 rounded-lg shadow-xl border border-slate-700">
+        <h2 class="text-xl font-semibold mb-4 flex justify-between">
+          السجلات المسترجعة (Live)
+          <span
+            class="status-badge text-[10px] bg-green-900 text-green-400 px-2 py-1 rounded animate-pulse"
+            >متصل بالسحابة</span
+          >
+        </h2>
+        <div id="dataContainer" class="space-y-3 max-h-80 overflow-y-auto pr-2">
+          <p class="text-slate-500 text-center italic">
+            جاري الاتصال بقاعدة البيانات...
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>
+          تم تطوير المشروع بواسطة:
+          <span class="author-name">عمر احمد محمدي</span>
+        </p>
+        <p class="project-tag">Cloud Computing Project &copy; 2026</p>
+      </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+#dataContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+#dataContainer::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cloud-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.data-item {
+  transition: all 0.3s ease;
+}
+
+.data-item:hover {
+  background: #1e293b;
+  border-color: #ef4444; /* يتغير لون الحافة عند الحذف */
+}
+
+button:hover svg {
+  transform: scale(1.1);
+}
+
+.main-footer {
+  background: rgba(15, 23, 42, 0.9); /* لون داكن متناسق مع الخلفية */
+  backdrop-filter: blur(8px);
+  border-top: 1px solid #1e293b;
+  color: #94a3b8;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.author-name {
+  color: #3b82f6; /* لون أزرق لاسمك */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.project-tag {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* لجعل الفوتر دائماً في أسفل الصفحة حتى لو المحتوى قليل */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.max-w-2xl {
+  flex: 1; /* هذا يضمن أن المحتوى يأخذ المساحة المتاحة ويدفع الفوتر للأسفل */
+}
