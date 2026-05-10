@@ -1,4 +1,4 @@
-# ☁️ Advanced Cloud Sync Dashboard
+# ☁️ Advanced Cloud Sync Dashboard with Firebase
 
 ### مشروع مادة الحوسبة السحابية - تطبيق سحابي متكامل (Serverless)
 
@@ -50,3 +50,4 @@
 ---
 
 > **ملاحظة:** يعكس هذا المشروع فهمي لكيفية بناء تطبيقات قابلة للتوسع (Scalable) ومتاحة دائماً (High Availability) باستخدام الحلول السحابية الحديثة.
+> **live demo** https://mohamady1.github.io/Cloud/
